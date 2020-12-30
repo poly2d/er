@@ -1,7 +1,7 @@
 {{ if gt .Paginator.TotalPages 1 }}
 <div class="pagination tc db fixed-l bottom-2-l right-2-l mb3 mb0-l">
 {{ partial "back-to-top.html" . }}<br>
-<p class="mb0 mt2">Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }} <br>
+<p class="mb0 mt2">page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }} <br>
   {{ if .Paginator.HasPrev }}<a href="{{ .Paginator.Prev.URL | relURL }}">newer posts</a>{{ end }}
   {{ if .Paginator.HasNext }}<a href="{{ .Paginator.Next.URL | relURL }}">older posts</a>{{ end }}
 </p>
